@@ -10,13 +10,13 @@ services:
   gateway:
     restart: always
     env_file:
-    #  - .env
+      - .env
     image: fwchen/humpback-gateway:latest
     networks:
       - humpback
   core:
     env_file:
-    #  - .env
+      - .env
     restart: always
     image: fwchen/humpback-core:latest
     networks:
